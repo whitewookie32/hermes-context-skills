@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "name": "hermes-context-skills",
+  "description": "Shareable Hermes skills for LCM, context compression, and Headroom tool-result triage.",
+  "skills": [
+    {
+      "name": "headroom-tool-result-compression",
+      "path": "skills/devops/headroom-tool-result-compression/SKILL.md"
+    },
+    {
+      "name": "hermes-lcm",
+      "path": "skills/hermes-lcm/SKILL.md"
+    },
+    {
+      "name": "context-compression-integration",
+      "path": "skills/software-development/context-compression-integration/SKILL.md"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 10,
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1074,
+      "sha256": "343eb26d382301fc416897e5da3abbd32998f5f814c7c736439227d0e13b4510"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2131,
+      "sha256": "7dbf36937c22e25af044a31906207e4c7993758c767d5086629d651d80141947"
+    },
+    {
+      "path": "skills/devops/headroom-tool-result-compression/SKILL.md",
+      "bytes": 6229,
+      "sha256": "da7118428938a43997f1311f8fe53e7a7ddba49485cecbee36dbcd6245682ef4"
+    },
+    {
+      "path": "skills/hermes-lcm/SKILL.md",
+      "bytes": 2175,
+      "sha256": "3db2ed5c5ce73b950afb91e3fcdb73c0e5602dfd575b01e59feb2d3cf0af7284"
+    },
+    {
+      "path": "skills/hermes-lcm/references/architecture.md",
+      "bytes": 1666,
+      "sha256": "a65995c303f9d6ff7e4a72bc10e2450eb9b3fb21c6653d38f22fd9a69acec59e"
+    },
+    {
+      "path": "skills/hermes-lcm/references/configuration.md",
+      "bytes": 1653,
+      "sha256": "5aa7e0d8a4b288af3274b100ae1420e99c82e8656614485d77db27e9f669576d"
+    },
+    {
+      "path": "skills/hermes-lcm/references/diagnostics.md",
+      "bytes": 1854,
+      "sha256": "241a15f98a5c7b0e0bdd7104f830cdca42e1a54f41f0a832e0c4f8ab4f8ec510"
+    },
+    {
+      "path": "skills/hermes-lcm/references/recall-policy.md",
+      "bytes": 2231,
+      "sha256": "c54b2948fcb2b1ebbdfa0f9cd8d7cf0c36d79a7829babb049407eceb1c23d17e"
+    },
+    {
+      "path": "skills/hermes-lcm/references/recall-tools.md",
+      "bytes": 5887,
+      "sha256": "6b8e1b345aaba4cb0109383c5a5f0584d758fec7ccdcd7c35bceae0f089f9739"
+    },
+    {
+      "path": "skills/hermes-lcm/references/session-lifecycle.md",
+      "bytes": 1504,
+      "sha256": "42044e5e14a32ecf88e2be4c0c8b86f04b0ef011e00640c5ae36e0088da86819"
+    },
+    {
+      "path": "skills/software-development/context-compression-integration/SKILL.md",
+      "bytes": 3853,
+      "sha256": "136535cada3894bc5f9dc23d3fd35972e4d872e04b07ea1e88e6aa6aae459755"
+    },
+    {
+      "path": "skills/software-development/context-compression-integration/references/runtime-verification.md",
+      "bytes": 2386,
+      "sha256": "e59b69819f8a9ed3ea2fc85bdf720d98ae13c935aa6bf9038d410dd4283bf617"
+    }
+  ]
+}
