@@ -1,31 +1,12 @@
 {
   "schema_version": 1,
-  "name": "hermes-context-skills",
-  "description": "Shareable Hermes skills for LCM, context compression, Headroom tool-result triage, and bounded multi-agent orchestration.",
+  "name": "codex-only-skills",
+  "branch": "codex-only",
+  "description": "Standalone Codex CLI skill bundle for implementation, review, and isolated worktree execution.",
   "skills": [
     {
-      "name": "bot-communication-contracts",
-      "path": "skills/autonomous-ai-agents/bot-communication-contracts/SKILL.md"
-    },
-    {
-      "name": "sol-terra-parallel-orchestration",
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/SKILL.md"
-    },
-    {
-      "name": "the-comamander",
-      "path": "skills/autonomous-ai-agents/the-comamander/SKILL.md"
-    },
-    {
-      "name": "headroom-tool-result-compression",
-      "path": "skills/devops/headroom-tool-result-compression/SKILL.md"
-    },
-    {
-      "name": "hermes-lcm",
-      "path": "skills/hermes-lcm/SKILL.md"
-    },
-    {
-      "name": "context-compression-integration",
-      "path": "skills/software-development/context-compression-integration/SKILL.md"
+      "name": "codex",
+      "path": "skills/autonomous-ai-agents/codex/SKILL.md"
     }
   ],
   "files": [
@@ -46,163 +27,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 3090,
-      "sha256": "dcb16cdfcab5d9ba49c024885ce8f2c8a670b0b6701304b1023f85dd1c33db7a"
+      "bytes": 1557,
+      "sha256": "5dd70c27e8b9318c2e68e571cd5d101df4519dd0392be1de34c79dc3c480ca90"
     },
     {
-      "path": "skills/autonomous-ai-agents/bot-communication-contracts/SKILL.md",
-      "bytes": 5351,
-      "sha256": "ec5bf945e2b19902f525865981e9d52ab043b5b3d3adf46a60bd4b33e956003d"
+      "path": "skills/autonomous-ai-agents/codex/SKILL.md",
+      "bytes": 3600,
+      "sha256": "3d39c9f4f9be2c9b7e5f4880607bb5b865eab37d28a76745e2327f099eb85884"
     },
     {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/SKILL.md",
-      "bytes": 21463,
-      "sha256": "824712e1031a51aa8667973029923889d7121a44883eab3926d00c0f593045df"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/assured-controls.md",
-      "bytes": 13223,
-      "sha256": "c42164c915097172369f5f3cb903b1c0c73cc51187e52b23ac6aacf0a81c0c50"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/consultation-coverage.md",
-      "bytes": 17070,
-      "sha256": "58d421475f2e0e156af13b4feb3a94d6b0ca140372d01b4a381c5162623a430a"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/direct-mode.md",
-      "bytes": 11961,
-      "sha256": "2ab0f2fa0de9ede533f9b1c3353f00cb14aa33f35ad0627b40daa0cf15a259c5"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/kanban-activation-plan.md",
-      "bytes": 8253,
-      "sha256": "845ab248a6adc437f7626b66d7e055bfbae5bfb8291fe506e1c4caa171d62c9e"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/kanban-transport.md",
-      "bytes": 19272,
-      "sha256": "81f815138d8bdaa9bc4ddebf38c29f157e5615db78198472c2241b96825f61ce"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/parallel-mode.md",
-      "bytes": 19061,
-      "sha256": "ae95c139b96f1de1e9bd572d50cd1b892dba77aebcd690d9778e306769c4eadc"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/runtime-contract.md",
-      "bytes": 25545,
-      "sha256": "23ac978e024c33bddadf215d4627894cbc83c37321d46ff9b756aaf3f4a9f263"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/v2.2.1-safety-baseline.md",
-      "bytes": 8367,
-      "sha256": "973da794e026a7ff75680d99abaedbb945567eaeba615a44f01cb4b8b16d0332"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/references/work-item-lifecycle.md",
-      "bytes": 9710,
-      "sha256": "cbd16a479bd53efdeee7396e8cb68520043cfb7f8527f5b6d66983b79c324774"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/scripts/cli_consultation_ledger.py",
-      "bytes": 16159,
-      "sha256": "ba7fbda9fbcb130a7e28bde635c128fb517802cfc936a7c55a93003520c2d60f"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/scripts/test_cli_consultation_ledger.py",
-      "bytes": 16612,
-      "sha256": "89b281b6996a533973ef39ffc176bed43f069bb6b880c9ad9700661bd93ec0ac"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/templates/assured-ledger.md",
-      "bytes": 21986,
-      "sha256": "27f819d8cb25c5ca6894fe2542837fa2ecc800b41af7680482c11c6cbd817332"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/templates/compact-direct-trace.md",
-      "bytes": 9772,
-      "sha256": "aa4c915c041d42b07b78f158df10f358f26c744e96f803f2cbc1daeab9b03a0f"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/templates/parallel-plan.md",
-      "bytes": 27596,
-      "sha256": "e762e1a90ab5c881eeb6bde8d9cefc6d5f94550f0db31969fd861ffabd78c3cb"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/sol-terra-parallel-orchestration/templates/work-item-record.md",
-      "bytes": 4523,
-      "sha256": "a69c075bc549fa40e7768a632ef8a9220b7def3b8c9fcc3e8fd2ad808b911e5b"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/the-comamander/SKILL.md",
-      "bytes": 20092,
-      "sha256": "b5f9fa3ae7ff4e7809785cee88036339a37cf2295cac02a9bc758ef62197a7d0"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/the-comamander/references/concurrent-evidence-freshness.md",
-      "bytes": 1555,
-      "sha256": "104887ef10cac12bc48b58a9e4c81739d27f2ca9eea7269804c56a68857bdebf"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/the-comamander/references/hermes-committee-webui-contract.md",
-      "bytes": 19634,
-      "sha256": "62a510f9b477a3667561ba3d6e50fcb833b397c283a6f8fde8376321d483854a"
-    },
-    {
-      "path": "skills/autonomous-ai-agents/the-comamander/references/legacy-full-skill.md",
-      "bytes": 17837,
-      "sha256": "b42c13cdb85a414a579ef66cea377aba97737e2629f67b4dc5352060bc6e2368"
-    },
-    {
-      "path": "skills/devops/headroom-tool-result-compression/SKILL.md",
-      "bytes": 6229,
-      "sha256": "da7118428938a43997f1311f8fe53e7a7ddba49485cecbee36dbcd6245682ef4"
-    },
-    {
-      "path": "skills/hermes-lcm/SKILL.md",
-      "bytes": 2175,
-      "sha256": "3db2ed5c5ce73b950afb91e3fcdb73c0e5602dfd575b01e59feb2d3cf0af7284"
-    },
-    {
-      "path": "skills/hermes-lcm/references/architecture.md",
-      "bytes": 1666,
-      "sha256": "a65995c303f9d6ff7e4a72bc10e2450eb9b3fb21c6653d38f22fd9a69acec59e"
-    },
-    {
-      "path": "skills/hermes-lcm/references/configuration.md",
-      "bytes": 1653,
-      "sha256": "5aa7e0d8a4b288af3274b100ae1420e99c82e8656614485d77db27e9f669576d"
-    },
-    {
-      "path": "skills/hermes-lcm/references/diagnostics.md",
-      "bytes": 1854,
-      "sha256": "241a15f98a5c7b0e0bdd7104f830cdca42e1a54f41f0a832e0c4f8ab4f8ec510"
-    },
-    {
-      "path": "skills/hermes-lcm/references/recall-policy.md",
-      "bytes": 2231,
-      "sha256": "c54b2948fcb2b1ebbdfa0f9cd8d7cf0c36d79a7829babb049407eceb1c23d17e"
-    },
-    {
-      "path": "skills/hermes-lcm/references/recall-tools.md",
-      "bytes": 5887,
-      "sha256": "6b8e1b345aaba4cb0109383c5a5f0584d758fec7ccdcd7c35bceae0f089f9739"
-    },
-    {
-      "path": "skills/hermes-lcm/references/session-lifecycle.md",
-      "bytes": 1504,
-      "sha256": "42044e5e14a32ecf88e2be4c0c8b86f04b0ef011e00640c5ae36e0088da86819"
-    },
-    {
-      "path": "skills/software-development/context-compression-integration/SKILL.md",
-      "bytes": 3853,
-      "sha256": "136535cada3894bc5f9dc23d3fd35972e4d872e04b07ea1e88e6aa6aae459755"
-    },
-    {
-      "path": "skills/software-development/context-compression-integration/references/runtime-verification.md",
-      "bytes": 2386,
-      "sha256": "e59b69819f8a9ed3ea2fc85bdf720d98ae13c935aa6bf9038d410dd4283bf617"
+      "path": "skills/autonomous-ai-agents/codex/references/codex-oauth-troubleshooting.md",
+      "bytes": 1668,
+      "sha256": "44c3ba6df378fe8503622038350795b50a9082d747b79665a0a31544a6f5ab62"
     }
   ]
 }
