@@ -1,38 +1,51 @@
 # Codex-Only Skills
 
-> This is the `codex-only` branch of [`whitewookie32/hermes-context-skills`](https://github.com/whitewookie32/hermes-context-skills). It is a standalone, single-agent Codex CLI bundle. The repository's `main` branch retains the Hermes LCM, compression, Headroom, and multi-agent orchestration bundle.
+This branch is a standalone bundle for **OpenAI Codex CLI**. It intentionally excludes Hermes-LCM, Headroom, and Hermes-specific orchestration/runtime configuration. Those remain on [`main`](../../tree/main).
 
-## Included
+## Included skills
 
-| Skill | Purpose |
-| --- | --- |
-| [`codex`](skills/autonomous-ai-agents/codex/) | Run OpenAI Codex CLI safely for implementation, isolated PR review, and parallel worktree tasks. |
+| Skill | Use it for | Runtime dependency |
+|---|---|---|
+| [`codex`](skills/autonomous-ai-agents/codex/) | bounded implementation, refactoring, review, and test work | Codex CLI |
+| [`codex-graft`](skills/autonomous-ai-agents/codex-graft/) | local code-graph orientation, symbol tracing, impact analysis, and MCP queries | Graft CLI |
+| [`codex-fractals`](skills/autonomous-ai-agents/codex-fractals/) | dependency-aware parallel Codex leaves in isolated Git worktrees | TinyAGI Fractals (experimental) |
 
 ## Install
 
-Copy the `skills/autonomous-ai-agents/codex/` directory into the skill location recognized by your Codex setup.
+Copy the skill directories you want into the skill location recognized by your Codex setup:
 
 ```text
 skills/autonomous-ai-agents/codex/
+skills/autonomous-ai-agents/codex-graft/
+skills/autonomous-ai-agents/codex-fractals/
 ```
+
+These are workflow instructions, not vendored executables. Install and update Codex, Graft, and Fractals through their respective upstream projects. Keep credentials, generated indexes, caches, and application configuration outside this repository.
+
+## Graft with Codex
+
+Build a graph for a specific repository, then register the resulting graph as a Codex MCP server:
+
+```bash
+cd /absolute/path/to/repository
+graft build .
+graft check .
+codex mcp add graft-my-project -- graft mcp "$PWD"
+```
+
+Start a new Codex session and use `/mcp` to confirm the server. See [`codex-graft`](skills/autonomous-ai-agents/codex-graft/) for freshness checks, per-repository scoping, and the `graft init` safety boundary.
+
+## Fractals with Codex
+
+Use Fractals only after defining leaf-task contracts, worktree ownership, dependencies, acceptance tests, timeouts, and escalation conditions. Leaf Codex agents must not commit, merge, push, publish, expand scope, or bypass sandbox/approval controls. See [`codex-fractals`](skills/autonomous-ai-agents/codex-fractals/) for the complete contract.
 
 ## Codex-only boundaries
 
-- This branch does **not** require Hermes, OpenClaw, an LCM plugin, Headroom, or a multi-agent coordinator.
-- Use Codex in a Git worktree or repository. For scratch work, initialize a disposable Git repository first.
-- Use `codex exec` for bounded tasks. Review the diff and run the relevant checks before committing or pushing.
-- Prefer one Codex process per isolated worktree for parallel tasks; do not run concurrent writers in the same worktree.
-- Never place API keys, OAuth tokens, or `~/.codex/` credential files in the repository.
-
-## Verification
-
-```bash
-codex --version
-git status --short
-```
-
-For authentication repair, see [`skills/autonomous-ai-agents/codex/references/codex-oauth-troubleshooting.md`](skills/autonomous-ai-agents/codex/references/codex-oauth-troubleshooting.md).
+- No Hermes runtime or provider configuration.
+- No automatic access to Hermes-LCM or Headroom.
+- No OAuth-token import, copied authentication state, `.env` files, private keys, caches, or generated output.
+- No automatic publication, branch merging, deployment, or permission bypass.
 
 ## License
 
-MIT. See [`LICENSE`](LICENSE).
+The bundle is MIT-licensed; see [`LICENSE`](LICENSE). Upstream tools retain their own licenses and installation requirements.

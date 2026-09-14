@@ -2,11 +2,19 @@
   "schema_version": 1,
   "name": "codex-only-skills",
   "branch": "codex-only",
-  "description": "Standalone Codex CLI skill bundle for implementation, review, and isolated worktree execution.",
+  "description": "Standalone Codex CLI skills for bounded coding, local code-graph analysis, and dependency-aware worktree execution.",
   "skills": [
     {
       "name": "codex",
       "path": "skills/autonomous-ai-agents/codex/SKILL.md"
+    },
+    {
+      "name": "codex-graft",
+      "path": "skills/autonomous-ai-agents/codex-graft/SKILL.md"
+    },
+    {
+      "name": "codex-fractals",
+      "path": "skills/autonomous-ai-agents/codex-fractals/SKILL.md"
     }
   ],
   "files": [
@@ -27,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1557,
-      "sha256": "5dd70c27e8b9318c2e68e571cd5d101df4519dd0392be1de34c79dc3c480ca90"
+      "bytes": 2521,
+      "sha256": "a71965be9b69b30aabd12b5a7ceee0bb809772bcc9eb7972c1b90a0eb1b870e4"
     },
     {
       "path": "skills/autonomous-ai-agents/codex/SKILL.md",
@@ -39,6 +47,16 @@
       "path": "skills/autonomous-ai-agents/codex/references/codex-oauth-troubleshooting.md",
       "bytes": 1668,
       "sha256": "44c3ba6df378fe8503622038350795b50a9082d747b79665a0a31544a6f5ab62"
+    },
+    {
+      "path": "skills/autonomous-ai-agents/codex-fractals/SKILL.md",
+      "bytes": 3791,
+      "sha256": "788dc74fa48ae188a8cf2f2213a36ff084316d5a0b2f8404af7ab14fd1b9eb04"
+    },
+    {
+      "path": "skills/autonomous-ai-agents/codex-graft/SKILL.md",
+      "bytes": 2890,
+      "sha256": "95b79ff3debb34c6b1b5d3930b9a1a9f36cc377999c88c6b6a81f7058633d5ff"
     }
   ]
 }
